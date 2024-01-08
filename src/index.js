@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App, { All } from './App';
+import  {  Formal } from './App';
 import reportWebVitals from './reportWebVitals';
-import  {  ExpenseEntryItem, Greeting } from './components/Box1.js';
+import Callpro from './crud_operation/Callpro';
+
+
 
 
 
@@ -14,11 +16,15 @@ import  {  ExpenseEntryItem, Greeting } from './components/Box1.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-  
-  <ExpenseEntryItem />
-  <Greeting />
-  <All />
+    
+    {/* <App /> */}
+
+{/* <Callpro /> */}
+
+
+
+    <Formal />
+    
   </React.StrictMode>
 );
 

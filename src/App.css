@@ -1,4 +1,6 @@
-
+*{
+  margin: 10px;
+}
 .App{
   background-color: aquamarine;
 }
@@ -29,4 +31,7 @@ float:inherit;
 }
 .obj{
   margin: 15px;
+}
+b{
+  color:blueviolet
 }

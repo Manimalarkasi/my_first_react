@@ -26,6 +26,8 @@ export class ExpenseEntryItem extends React.Component {
     );
     }
    }
+export const Hi = ()=> <b>I'm our friend</b>
+
 
    export function Greeting() {
     return <h1>Hello React!</h1>
