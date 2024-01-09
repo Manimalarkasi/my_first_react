@@ -4,6 +4,7 @@ import './index.css';
 import  {  Formal } from './App';
 import reportWebVitals from './reportWebVitals';
 import Callpro from './crud_operation/Callpro';
+import React_call from './React_render/React_call';
 
 
 
@@ -15,17 +16,19 @@ import Callpro from './crud_operation/Callpro';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <div>
+   {/* <React.StrictMode> */}
     
     {/* <App /> */}
 
-{/* <Callpro /> */}
+     {/* <Callpro /> */}
 
+      <React_call />
 
-
-    <Formal />
+    {/* <Formal /> */}
     
-  </React.StrictMode>
+  {/* </React.StrictMode> */}
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
