@@ -18,6 +18,7 @@ function Usereducerrender() {
     console.log('useReducer is rendered')
   return (
     <div>
+      <b>useReducer render</b>
         <h3>connt - {count}</h3>
       <button onClick={()=>dispatch('increment')}>increment</button>
       <button onClick={()=>dispatch('decrement')}>decrement</button>

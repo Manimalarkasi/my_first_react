@@ -17,7 +17,7 @@ import React_call from './React_render/React_call';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-   {/* <React.StrictMode> */}
+   {/* <React.StrictMode>  */}
     
     {/* <App /> */}
 
@@ -27,8 +27,9 @@ root.render(
 
     {/* <Formal /> */}
     
-  {/* </React.StrictMode> */}
+   {/* </React.StrictMode>  */}
   </div>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function
