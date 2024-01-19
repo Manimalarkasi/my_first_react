@@ -16,6 +16,7 @@ background-color: aqua;
 }
 .signin{
     background-image: url("C:\Users\SightSpectrum\Pictures\Saved Pictures/10894.jpeg");
+    background-repeat: repeat-y;
     
 }
 /* .in{

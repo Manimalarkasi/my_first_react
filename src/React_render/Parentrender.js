@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React,{useCallback, useMemo, useState} from 'react'
 import Childrender, { Childrender1, MemoizedChildrender2 } from './Childrender';
 import { MemoizedMemochild } from './Memo';
-import { MemoizedMemochild1 } from './MemoChild';
+import { MemoizedMemochild1 } from './MemoChild1';
+import { MemoizedMemochild2 } from './Memochild2';
 
 
 export function Parentrender() {
@@ -101,7 +102,7 @@ export function Memoparent1() {
   console.log(' memo parent 1 is rendered');
   return (
     <div>
-      <b>Incorrect memo with Impure Component - child memo compo</b>
+      <b>Incorrect memo with Impure Component - parent memo compo</b>
       <div>count -{count}</div>
     <button onClick={()=>setCount(c=>c+1)}>count- {count}</button>
    <button onClick={()=>setName('malar')}>change name</button>
@@ -110,7 +111,29 @@ export function Memoparent1() {
   )
 }
 
-
+export function Memoparent2() {
+  const [count, setCount] = useState(0)
+  const [name,setName] = useState('mani')
+  const person ={
+    fname:'mani',
+    lname:'malar'
+  }
+  const handleclick =()=>{}
+  const memoizedPerson =useMemo(()=>person,[])
+  const memoizedHandleclick =useCallback(()=>handleclick,[])
+  console.log(' memo parent 1 is rendered');
+  return (
+    <div>
+      <b>Incorrect memo with props Reference - memo child compo</b><br />
+      <b> useCallback & useMemo </b>
+      <div>count -{count}</div>
+    <button onClick={()=>setCount(c=>c+1)}>count- {count}</button>
+   <button onClick={()=>setName('malar')}>change name</button>
+      <MemoizedMemochild2 name={name} person={memoizedPerson} 
+      handleclick={memoizedHandleclick}/>
+    </div>
+  )
+}
 
 
 

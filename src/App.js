@@ -58,7 +58,7 @@ import Callpro from './crud_operation/Callpro';
  export const Formal = (Props) => {
   return (
     <div>
-      <Callall />
+      {/* <Callall /> */}
       {/* <Callpro /> */}
       
      

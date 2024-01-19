@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import  {  Formal } from './App';
+import  App,{  Formal } from './App';
 import reportWebVitals from './reportWebVitals';
 import Callpro from './crud_operation/Callpro';
 import React_call from './React_render/React_call';
@@ -16,19 +16,19 @@ import React_call from './React_render/React_call';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
+  <>
    {/* <React.StrictMode>  */}
     
-    {/* <App /> */}
+    <App />
 
      {/* <Callpro /> */}
 
-      <React_call />
+      {/* <React_call /> */}
 
     {/* <Formal /> */}
     
    {/* </React.StrictMode>  */}
-  </div>
+  </>
  
 );
 
