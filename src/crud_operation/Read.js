@@ -48,7 +48,7 @@ export default function Read() {
                 <Table.HeaderCell> Checked </Table.HeaderCell>
                 <Table.HeaderCell>Delete</Table.HeaderCell>
                 <Table.HeaderCell>Update</Table.HeaderCell>
-
+                <Table.HeaderCell>Update</Table.HeaderCell>
             </Table.Row>
          </Table.Header>
          <Table.Body>
