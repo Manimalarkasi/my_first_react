@@ -17,7 +17,6 @@ export default function Read() {
     catch(error){
       console.log('error deleting item:',error);
     }
-    
    }
    
    const updateuser =({id,firstname,lastname,checked})=>{
@@ -26,6 +25,8 @@ export default function Read() {
     localStorage.setItem('lastname',lastname)
     localStorage.setItem('checked',checked)
     navigate('/update')
+
+    
    }
    const getapi =async () =>{
     const resp = await axios.get(API_URL);
